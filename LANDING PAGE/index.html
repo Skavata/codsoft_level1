@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section class="home" id="home">
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#new">What's New</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Welcome to Starbucks, where coffee isn't just a beverage;
+                    it's an experience. With every sip, indulge in the rich aroma
+                    and unmistakable flavor that define our renowned blends. Join
+                    us on a journey where each cup tells a story of quality,
+                    craftsmanship, and community.
+                </p>
+                <a href="#menu">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <div class="sci">
+            <a href="#"><i class='bx bxl-facebook' style="color: #000;"></i></a>
+            <a href="#"><i class='bx bxl-instagram' style="color: #000;"></i></a>
+            <a href="#"><i class='bx bxl-twitter' style="color: #000;"></i></a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="circle menu"></div>
+        <div class="content">
+            <div class="textBox">
+                <h2>Discover <br>our Starbucks <span>menu:</span></h2>
+                <ul>
+                    <li><strong>Signature Coffees: </strong>Expertly crafted espresso-based drinks.</li>
+                    <li><strong>Frappuccino® Blends: </strong>Refreshing blended beverages.</li>
+                    <li><strong>Teavana™ Teas: </strong>A variety of soothing tea options.</li>
+                    <li><strong>Bakery Items: </strong>Freshly baked treats to pair with your drink.</li>
+                    <li><strong>Healthy Snacks: </strong>Wholesome options for on-the-go cravings.</li>
+                    <li><strong>Customization: </strong>Create your perfect drink with our range of options.</li>
+                </ul>
+                <br>
+                <p>Experience Starbucks excellence in every sip and bite!
+                </p>
+                <a href="#new">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img2.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" ></li>
+            <li><img src="thumb2.png" ></li>
+            <li><img src="thumb3.png"></li>
+        </ul>
+    </section>
+
+
+    <section class="new" id="new">
+        <div class="circle new"></div>
+        <div class="content">
+            <div class="textBox">
+                <h2>What's <span>New</span></h2>
+                <p>Discover the latest additions and seasonal specials at Starbucks.
+                    Experience new flavors and exciting promotions today!
+                </p>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img3.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" ></li>
+            <li><img src="thumb2.png" ></li>
+            <li><img src="thumb3.png" ></li>
+        </ul>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="circle"></div>
+        <div class="content">
+            <div class="textBox">
+                <h2>Contact <span>Us</span></h2>
+                <h3>Get in touch with us:</h3>
+                <br>
+                <ul>
+                    <li><strong>Reach Out: </strong>Have questions or feedback? We're here to help!</li>
+                    <li><strong>Connect: </strong>Contact our team for assistance or inquiries about our products and
+                        services.</li>
+                </ul>
+                <br>
+                <p>We're just a message away!</p>
+                <br>
+                <div class="contact-list">
+                    <li><i class='bx bx-send'></i>sandramuema2018@gmail.com</li>
+                    <li><i class='bx bx-phone'></i>0719591182</li>
+                </div>
+                <div class="contact-icons">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-linkedin'></i></a>
+                </div>
+
+                <a href="#home">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" ></li>
+            <li><img src="thumb2.png" ></li>
+            <li><img src="thumb3.png" ></li>
+        </ul>
+    </section>
+
+    <div class="last-text">
+        <p>Developed with love by Sandra Muema © 2024 </p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
